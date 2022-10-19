@@ -1,34 +1,65 @@
 body{ 
     margin: 0;
-    padding: 0;
-    align-items: center;
-    justify-content: center;
     display: flex;
-    height: 500px;
+    height: 400px;
+    background-color: #715a8f5d;
+    align-items: baseline;
 }
+
 .what{
+    margin-left: 100px;
+    margin-top: 60px;
+    width: 200px;
+    height: 20px;
+    padding: 20px; 
+    top: 50px;
+
     font-family: "Roboto", sans-serif;
     font-size: 18px;
     font-weight: bold;
-    background-color:#03a9fc;
-    width: 200px;
-    padding: 20px;
+    background-color:#e0de3e;
+    
     text-align: center;
     text-transform: uppercase;
-    color: #fff;
+    color: rgb(43, 139, 248);
+    text-decoration: none;
     border-radius: 10px;
     cursor: pointer;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1) ;
-    -webkit-transition-duration: 0.3s;
+   
+
     transition-duration: 0.3s;
-    -webkit-transition-property: box-shadow, transform;
-    transition-property:box-shadow, transform ;
-    text-decoration: none;
-     
+    transition-property: all;
+    
+   
+    
 
 }
 .what:hover, .what:focus, .what:active{
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); 
   -webkit-transform: scale(1.1);
   transform: scale(1.1); 
+  width: 225px;
+  
+ 
+}
+.what:hover + .rect{
+    width: 500px;
+    margin-left: 450;
+}
+.rect{
+    margin: 0;
+    
+   
+    position: absolute;
+    border-radius: 10px;
+    height: 50px;
+    width: 50px;
+    background-color: bisque;
+
+    transition-duration: 0.3s;
+    transition-property: all;
+    
+
+    
 }
